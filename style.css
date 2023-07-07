@@ -1,0 +1,108 @@
+.radio-toolbar {
+  margin: 10px;
+  padding: 20px;
+}
+
+.radio-toolbar input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+.radio-toolbar label:hover {
+  background-color: #dfd;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+    color:rgb(0,0,0);
+}
+
+fieldset label {
+ font-weight: normal;
+ background-color:ghostwhite;
+ color:black; 
+ //padding: .1em;
+ float:left;
+ //border: 1px solid grey;
+ text-align: center;
+ line-height: 50px;
+ }
+ 
+input[type="radio"]:checked+label {
+ font-weight: bold;
+ background-color:grey;
+ color:white; 
+}
+
+fieldset span 
+{display:inline-block; 
+text-align: center;}
+fieldset span input { display: none;}
+.w-m {
+  max-width: calc(3 * var(--width-min-container));
+}
+
+fieldset label img {
+  height: 146px;
+}
+
+.mem {width:800px; border:0px;padding:0px;white-space:nowrap;}
+.mem img {height: 134px; width: 167px; font-size: 0px;}
+
+img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
+}
+
+.cat {
+ height:250px;
+ width: 250px;
+}
+.mem label {
+    padding: 8px 10px;}
+
+.task {
+  font-size:17px;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cs_rating {
+  font-size:24px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#button_continue::before {content: 'Continue'}
+
+#recognition_memory::before{content: 'Was this nonword part of the previously presented nonword-image pairs?'}
+
+#dich_eval::before{content: 'According to your personal evaluation, is the nonword positive or negative?'}
+
+#weiterdiv {padding-top:10px;text-align:center}
+
+#source_memory::before{content: 'Which of the following images was previously paired with the nonword presented above?'}
+
+#ratings::before{content: 'How positive or negative is your personal evaluation of the nonword presented above?'}
+
+#ratings_cs::before{content: '${this.parameters.cs}'}
